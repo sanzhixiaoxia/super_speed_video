@@ -20,11 +20,13 @@
     const messages = {
         'zh': {
             'speedText': '当前速度：',
-            'speedChanged': '当前速度：'
+            'speedChanged': '当前速度：',
+            'speedUpdating': '倍速中...'
         },
         'en': {
             'speedText': 'Current Speed: ',
-            'speedChanged': 'Current speed：'
+            'speedChanged': 'Current speed：',
+            'speedUpdating': 'Updating speed...'
         }
     };
     const curLang = navigator.language.slice(0, 2);
@@ -173,5 +175,24 @@
             showMsg(MSG.speedText + playbackRate.toFixed(1));
         });
     }
+
+    let longPressTimer = null;
+    let longPressSpeed = 2.0;
+
+    function handleLongPressStart() {
+        showMsg(MSG.speedUpdating);
+        longPressTimer = setInterval(() => {
+            changeSpeed(longPressSpeed);
+        }, 1000);
+    }
+
+    function handleLongPressEnd() {
+        clearInterval(longPressTimer);
+        changeSpeed(playbackRate);
+    }
+
+    const videoElement = document.querySelector('video');
+    videoElement.addEventListener('touchstart', handleLongPressStart);
+    videoElement.addEventListener('touchend', handleLongPressEnd);
 
 })();
