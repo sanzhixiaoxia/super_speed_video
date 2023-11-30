@@ -170,6 +170,7 @@
         const videos = document.querySelectorAll('video');
         videos.forEach((video) => {
             video.playbackRate = playbackRate.toFixed(1);
+            showMsg(MSG.speedText + playbackRate.toFixed(1));
         });
     }
 
