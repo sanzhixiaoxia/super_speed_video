@@ -127,11 +127,27 @@
         } else if (key === 'z') {
             changeSpeed(1);
         }
-    };
+    }
+
+    function handleParentKeyPress(e) {
+        const videos = document.querySelectorAll("video").length;
+
+        if (videos > 0) {
+            window.parent.postMessage({ type: "keyPress", key: e.key }, "*");
+        }
+    }
+
+    if (window.self !== window.top) {
+        window.addEventListener("message", (event) => {
+            if (event.data.type === "keyPress") {
+                const { key } = event.data;
+                handleKeyPress({ key });
+            }
+        });
+    }
 
     if (checkInIframe()) {
-        // window.parent.addEventListener('keydown', handleKeyPress);
-        window.top.document.addEventListener('keydown', handleKeyPress);
+        document.addEventListener('keydown', handleParentKeyPress);
     }else{
         document.addEventListener('keydown', handleKeyPress);
     }
