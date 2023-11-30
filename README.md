@@ -33,41 +33,15 @@
 5. 药不能停 O(∩_∩)O~~
 
 ## 使用方法：
-&nbsp; 手动调节：
-- 1.调节右上角加速框右侧上下按钮即可调节倍
-- 2.在右上角的加速框内输入加速倍率,如2、4、8、16等。
-
 &nbsp; 快捷键：
-- 单手快捷键：“x”，“c” 、恢复正常播放:“t”或“z”
+- 单手快捷键：“x”，“c” 、恢复正常播放:“z”
 
 ## 视频讲解：
 1. Tampermonkey插件 （[下载](https://www.tampermonkey.net/index.php)）
 2. 脚本安装地址      （[安装](https://greasyfork.org/zh-CN/scripts/480875)）
-3. 脚本使用视频      （[视频](https://www.bilibili.com/video/BV1La411r7ra)）
 
 ## 代码地址：
-1. `github`：[github](https://github.com/sanzhixiaoxia/super_speed_video)
-2. `gitee` ：[gitee](https://gitee.com/leiwang2010/super_speed_video)
-
-## 脚本截图
-<table>
-    <tr>
-        <td><b>脚本介绍</b></td>
-        <td><b>快捷键</b></td>
-    </tr>
-    <tr>
-        <td><img alt="脚本介绍" src="https://gitee.com/leiwang2010/super_speed_video/raw/master/showImgs/2023/0919/03.gif"/></td>
-        <td><img alt="脚本快捷键" src="https://gitee.com/leiwang2010/super_speed_video/raw/master/showImgs/2023/0919/04.gif"/></td>
-    </tr>
-    <tr>
-        <td><b>脚本设置</b></td>
-        <td><b>健康观影</b></td>
-    </tr>
-    <tr>
-        <td><img alt="脚本设置" src="https://gitee.com/leiwang2010/super_speed_video/raw/master/showImgs/2023/0919/05.gif"/></td>
-        <td><img alt="健康观影" src="https://gitee.com/leiwang2010/super_speed_video/raw/master/showImgs/2023/0919/06.gif"/></td>
-    </tr>
-</table>
+  `gitee` ：[gitee](https://gitee.com/leiwang2010/super_speed_video)
 
 ## 脚本及插件
 <table>
