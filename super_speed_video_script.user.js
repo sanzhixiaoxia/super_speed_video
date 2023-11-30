@@ -9,7 +9,7 @@
 // @run-at       document-end
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @license      GPL-3.0-or-later
+// @license      GPL-3.0
 // @downloadURL  https://update.greasyfork.org/scripts/480875/%E8%B6%85%E7%BA%A7%E8%A7%86%E9%A2%91%E5%80%8D%E9%80%9F%E6%92%AD%E6%94%BE.user.js
 // @updateURL    https://update.greasyfork.org/scripts/480875/%E8%B6%85%E7%BA%A7%E8%A7%86%E9%A2%91%E5%80%8D%E9%80%9F%E6%92%AD%E6%94%BE.meta.js
 // ==/UserScript==
