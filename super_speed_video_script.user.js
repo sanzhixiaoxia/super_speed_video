@@ -137,7 +137,7 @@
         }
     }
 
-    if (window.self !== window.top) {
+    if (checkInIframe()) {
         window.addEventListener("message", (event) => {
             if (event.data.type === "keyPress") {
                 const { key } = event.data;
