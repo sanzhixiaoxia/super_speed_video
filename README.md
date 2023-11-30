@@ -41,7 +41,7 @@
 2. 脚本安装地址      （[安装](https://greasyfork.org/zh-CN/scripts/480875)）
 
 ## 代码地址：
-  `gitee` ：[gitee](https://gitee.com/leiwang2010/super_speed_video)
+> `gitee` ：[gitee](https://gitee.com/leiwang2010/super_speed_video)
 
 ## 脚本及插件
 <table>
