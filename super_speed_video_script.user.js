@@ -168,14 +168,6 @@
         window.parent.postMessage({type: 'changeSpeed', speed: playbackRate,}, '*');
     }
 
-    window.onload = function () {
-        const videos = document.querySelectorAll('video');
-        videos.forEach((video) => {
-            video.playbackRate = playbackRate.toFixed(1);
-            showMsg(MSG.speedText + playbackRate.toFixed(1));
-        });
-    }
-
     let longPressTimer = null;
     let longPressSpeed = 2.0;
 
@@ -191,8 +183,15 @@
         changeSpeed(playbackRate);
     }
 
-    const videoElement = document.querySelector('video');
-    videoElement.addEventListener('touchstart', handleLongPressStart);
-    videoElement.addEventListener('touchend', handleLongPressEnd);
+    window.onload = function () {
+        const videos = document.querySelectorAll('video');
+        videos.forEach((video) => {
+            video.playbackRate = playbackRate.toFixed(1);
+            showMsg(MSG.speedText + playbackRate.toFixed(1));
+
+            video.addEventListener('touchstart', handleLongPressStart);
+            video.addEventListener('touchend', handleLongPressEnd);
+        });
+    }
 
 })();
