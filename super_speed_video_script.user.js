@@ -128,7 +128,13 @@
             changeSpeed(1);
         }
     };
-    document.addEventListener('keydown', handleKeyPress);
+
+    if (checkInIframe()) {
+        // window.parent.addEventListener('keydown', handleKeyPress);
+        window.top.document.addEventListener('keydown', handleKeyPress);
+    }else{
+        document.addEventListener('keydown', handleKeyPress);
+    }
 
     const handleIframeMessage = (event) => {
         if (!checkExistVideo()){return;}
