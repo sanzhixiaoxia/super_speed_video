@@ -188,7 +188,15 @@
         changeSpeed(playbackRate);
     }
 
+    /**
+     * 初始化菜单
+     */
+    function mokInitMenu(){
+        GM_registerMenuCommand(`最新版本 ✈ :`, function () {window.GM_openInTab('https://greasyfork.org/zh-CN/scripts/480875', {active: true,insert: true,setParent: true});});
+    }
+
     window.onload = function () {
+        mokInitMenu();
         const videos = document.querySelectorAll('video');
         videos.forEach((video) => {
             video.playbackRate = playbackRate.toFixed(1);
