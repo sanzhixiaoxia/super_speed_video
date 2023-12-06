@@ -8,8 +8,8 @@
 	<a target="_blank" href="https://greasyfork.org/zh-CN/scripts/480875">
         <img src="https://img.shields.io/badge/release-v2.1.5-brig1htgreen.svg">
     </a>
-	<a href="https://www.gnu.org/licenses/gpl-3.0">
-        <img alt="code style" src="https://img.shields.io/badge/license-GPL--3.0-4EB1BA.svg?style=flat-square">
+	<a href="https://spdx.org/licenses/AGPL-3.0-or-later.html">
+        <img alt="code style" src="https://img.shields.io/badge/license-AGPL--3.0--or--later-4EB1BA.svg?style=flat-square">
     </a>
     <a href="#">
         <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20Android-blue.svg" >
